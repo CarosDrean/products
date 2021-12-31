@@ -5,7 +5,7 @@ Guarda y consulta productos en memoria
 ## Construir la imagen docker
 
 ``` shell
-docker build --build-arg Dockerfile -t product:1.0 .
+docker build -t product:1.0 .
 ```
 
 ## Archivo de configuración
