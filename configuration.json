@@ -1,0 +1,7 @@
+{
+  "port": 8000,
+  "database": {
+    "name": "products"
+  },
+  "api_key_currency_layer": "eaad87921f229e9ba55ae6e98f2500f9"
+}

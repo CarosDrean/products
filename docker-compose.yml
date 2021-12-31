@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  billing:
+    image: product:1.0
+    container_name: product
+    restart: on-failure
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./configuration.json:/app/configuration.json

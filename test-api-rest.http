@@ -1,0 +1,46 @@
+### list all
+GET http://localhost:8000/beers
+
+### create item
+POST http://localhost:8000/beers
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "col",
+  "brewery": "al",
+  "country": "peru",
+  "price": 2.4,
+  "currency": "PEN"
+}
+
+### create item with existing id
+POST http://localhost:8000/beers
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "al",
+  "brewery": "cool",
+  "country": "peru",
+  "price": 2.4,
+  "currency": "PEN"
+}
+
+### get by id
+GET http://localhost:8000/beers/1
+
+### get by id not found
+GET http://localhost:8000/beers/2
+
+### get total price
+GET http://localhost:8000/beers/1/boxprice
+
+### get total price by id not found
+GET http://localhost:8000/beers/2/boxprice
+
+### get total price with quantity
+GET http://localhost:8000/beers/1/boxprice?quantity=1
+
+### get total price with quantity and currency
+GET http://localhost:8000/beers/1/boxprice?quantity=1&currency=CLP
